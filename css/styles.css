@@ -153,7 +153,13 @@ body {
     color: #1e90ff;
 }
 
-.education-card {
+.education-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.school {
     background: white;
     padding: 30px;
     border-radius: 8px;
@@ -161,28 +167,55 @@ body {
     border-left: 4px solid #1e90ff;
 }
 
-.education-header {
+.school-header {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
     margin-bottom: 0.5rem;
 }
 
-.education-card h3 {
+.school h3 {
     color: #1e90ff;
     font-size: 1.4rem;
 }
 
-.education-card .date {
+.school .date {
     color: #999;
     font-size: 0.9rem;
     font-style: italic;
 }
 
-.education-card .degree {
+.school .degree {
     font-size: 1.1rem;
     font-weight: 600;
     color: #333;
+    margin-bottom: 0.25rem;
+}
+
+.school .location {
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.school ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.school li {
+    padding: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+    color: #555;
+    font-size: 0.95rem;
+}
+
+.school li:before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    color: #1e90ff;
 }
 
 /* Skills Section */
@@ -318,8 +351,8 @@ footer {
     }
 
     .about,
-    .snippet,
     .experience,
+    .education,
     .skills,
     .contact {
         padding: 60px 0;
@@ -327,31 +360,35 @@ footer {
 
     .about h2,
     .experience h2,
+    .education h2,
     .skills h2,
     .contact h2 {
         font-size: 2rem;
         margin-bottom: 2rem;
     }
 
-    .about p,
-    .snippet p {
+    .about p {
         font-size: 1rem;
     }
 
-    .job {
+    .job,
+    .school {
         padding: 20px;
     }
 
-    .job-header {
+    .job-header,
+    .school-header {
         flex-direction: column;
         align-items: flex-start;
     }
 
-    .job .date {
+    .job .date,
+    .school .date {
         margin-top: 0.5rem;
     }
 
-    .job h3 {
+    .job h3,
+    .school h3 {
         font-size: 1.2rem;
     }
 
@@ -389,8 +426,8 @@ footer {
     }
 
     .about,
-    .snippet,
     .experience,
+    .education,
     .skills,
     .contact {
         padding: 40px 0;
@@ -398,35 +435,40 @@ footer {
 
     .about h2,
     .experience h2,
+    .education h2,
     .skills h2,
     .contact h2 {
         font-size: 1.5rem;
         margin-bottom: 1.5rem;
     }
 
-    .about p,
-    .snippet p {
+    .about p {
         font-size: 0.95rem;
     }
 
-    .job {
+    .job,
+    .school {
         padding: 15px;
         border-left-width: 3px;
     }
 
-    .job h3 {
+    .job h3,
+    .school h3 {
         font-size: 1rem;
     }
 
-    .job .role {
+    .job .role,
+    .school .degree {
         font-size: 0.95rem;
     }
 
-    .job .location {
+    .job .location,
+    .school .location {
         font-size: 0.85rem;
     }
 
-    .job li {
+    .job li,
+    .school li {
         font-size: 0.9rem;
         padding: 0.4rem 0 0.4rem 1.2rem;
     }
