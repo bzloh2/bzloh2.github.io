@@ -1,0 +1,434 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 120px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.hero .title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    opacity: 0.95;
+}
+
+.hero .location {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* About Section */
+.about {
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #667eea;
+}
+
+.about p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* Snippet Section */
+.snippet {
+    padding: 80px 0;
+}
+
+.snippet p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Experience Section */
+.experience {
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+.experience h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #667eea;
+}
+
+.experience-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.job {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    border-left: 4px solid #667eea;
+}
+
+.job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.5rem;
+}
+
+.job h3 {
+    color: #667eea;
+    font-size: 1.4rem;
+}
+
+.job .date {
+    color: #999;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+.job .role {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0.25rem;
+}
+
+.job .location {
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.job ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.job li {
+    padding: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+    color: #555;
+    font-size: 0.95rem;
+}
+
+.job li:before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    color: #667eea;
+}
+
+/* Skills Section */
+.skills {
+    padding: 80px 0;
+}
+
+.skills h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #667eea;
+    text-align: center;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+}
+
+.skill-card {
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+}
+
+.skill-card h3 {
+    color: #667eea;
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+}
+
+.skill-card ul {
+    list-style: none;
+}
+
+.skill-card li {
+    padding: 0.6rem 0;
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.skill-card li:last-child {
+    border-bottom: none;
+}
+
+/* Contact Section */
+.contact {
+    padding: 80px 0;
+    background: #f8f9fa;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #667eea;
+}
+
+.contact-buttons {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.email-btn {
+    background: #667eea;
+    color: white;
+}
+
+.email-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+}
+
+.phone-btn {
+    background: white;
+    color: #667eea;
+    border: 2px solid #667eea;
+}
+
+.phone-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.2);
+}
+
+.contact-btn .icon {
+    font-size: 1.5rem;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero {
+        padding: 60px 0;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero .title {
+        font-size: 1.2rem;
+    }
+
+    .about,
+    .snippet,
+    .experience,
+    .skills,
+    .contact {
+        padding: 60px 0;
+    }
+
+    .about h2,
+    .experience h2,
+    .skills h2,
+    .contact h2 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .about p,
+    .snippet p {
+        font-size: 1rem;
+    }
+
+    .job {
+        padding: 20px;
+    }
+
+    .job-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .job .date {
+        margin-top: 0.5rem;
+    }
+
+    .job h3 {
+        font-size: 1.2rem;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .contact-buttons {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .contact-btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 40px 0;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero .title {
+        font-size: 1rem;
+    }
+
+    .hero .location {
+        font-size: 0.95rem;
+    }
+
+    .about,
+    .snippet,
+    .experience,
+    .skills,
+    .contact {
+        padding: 40px 0;
+    }
+
+    .about h2,
+    .experience h2,
+    .skills h2,
+    .contact h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .about p,
+    .snippet p {
+        font-size: 0.95rem;
+    }
+
+    .job {
+        padding: 15px;
+        border-left-width: 3px;
+    }
+
+    .job h3 {
+        font-size: 1rem;
+    }
+
+    .job .role {
+        font-size: 0.95rem;
+    }
+
+    .job .location {
+        font-size: 0.85rem;
+    }
+
+    .job li {
+        font-size: 0.9rem;
+        padding: 0.4rem 0 0.4rem 1.2rem;
+    }
+
+    .skill-card {
+        padding: 15px;
+    }
+
+    .skill-card h3 {
+        font-size: 1rem;
+    }
+
+    .skill-card li {
+        font-size: 0.85rem;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .contact-buttons {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    .contact-btn {
+        padding: 12px 20px;
+        font-size: 0.95rem;
+    }
+
+    .contact-btn .icon {
+        font-size: 1.2rem;
+    }
+
+    footer {
+        font-size: 0.8rem;
+        padding: 1.5rem 0;
+    }
+}
