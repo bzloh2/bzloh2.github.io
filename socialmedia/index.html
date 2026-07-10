@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brian Loh — Social Media & Web Portfolio</title>
+    <meta name="description" content="Brian Loh's social media and web development portfolio — TikTok growth specialist and web developer based in New York City.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- NAV -->
+    <nav class="nav" id="nav">
+        <div class="nav-inner">
+            <a href="https://brianloh.dev" class="nav-logo">← brianloh.dev</a>
+            <span class="nav-title">Social Media & Web</span>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-bg-orbs">
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+            <div class="orb orb-3"></div>
+        </div>
+        <div class="container hero-content">
+            <div class="hero-badge">✓ Open to Freelance Projects</div>
+            <h1 class="hero-name">Brian Loh</h1>
+            <p class="hero-tagline">Web development &amp; TikTok growth.</p>
+            <p class="hero-sub">Based in New York City · Growth Engineer at Meta</p>
+            <div class="hero-cta-group">
+                <a href="mailto:brianzloh@gmail.com" class="btn btn-primary" id="hero-email-btn">Get In Touch</a>
+                <a href="#work" class="btn btn-ghost" id="hero-work-btn">See My Work ↓</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHAT I DO -->
+    <section class="services" id="work">
+        <div class="container">
+            <p class="section-label">What I Do</p>
+            <h2 class="section-title">Two areas of expertise.</h2>
+            <div class="services-grid">
+                <div class="service-card" id="service-web">
+                    <div class="service-icon">🌐</div>
+                    <h3>Website Development</h3>
+                    <p>I design and build websites from scratch, tailored to your brand and optimized for all screen sizes. From simple landing pages to multi-page sites with online stores.</p>
+                    <ul class="service-list">
+                        <li>Full website design &amp; development</li>
+                        <li>Mobile-first, responsive layouts</li>
+                        <li>E-commerce &amp; online store setup</li>
+                        <li>SEO &amp; performance optimization</li>
+                    </ul>
+                </div>
+                <div class="service-card" id="service-social">
+                    <div class="service-icon">🎥</div>
+                    <h3>Social Media Content Strategist</h3>
+                    <p>I develop content strategies and produce short-form videos that drive real, organic follower growth. The focus is on building an audience that actually engages with your brand.</p>
+                    <ul class="service-list">
+                        <li>Content strategy &amp; video production</li>
+                        <li>Hook writing &amp; scripting</li>
+                        <li>Trend research &amp; posting cadence</li>
+                        <li>Organic follower growth</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TIKTOK CASE STUDY -->
+    <section class="case-study tiktok-section" id="tiktok">
+        <div class="container">
+            <p class="section-label tiktok-label">Case Study · TikTok</p>
+            <h2 class="section-title">100 → 2,000 followers<br><span class="highlight">in 20 days.</span></h2>
+            <p class="case-study-desc">Sweeties Candy Shop in NYC wanted to establish a presence on TikTok. I developed a content strategy focused on short-form video production, trend-timed posting, and audience engagement. Over 20 days, the account grew from 100 to over 2,000 followers through consistent organic content.</p>
+
+            <!-- Stats row -->
+            <div class="stats-row">
+                <div class="stat-card" id="stat-followers">
+                    <div class="stat-number" data-target="2000" data-prefix="" data-suffix="+">0</div>
+                    <div class="stat-label">Followers Gained</div>
+                </div>
+                <div class="stat-card" id="stat-days">
+                    <div class="stat-number" data-target="20" data-prefix="" data-suffix=" days">0</div>
+                    <div class="stat-label">Time to Achieve</div>
+                </div>
+                <div class="stat-card" id="stat-growth">
+                    <div class="stat-number" data-target="1900" data-prefix="" data-suffix="%">0</div>
+                    <div class="stat-label">Follower Growth</div>
+                </div>
+            </div>
+
+            <!-- Featured Video -->
+            <div class="video-section">
+                <p class="video-label">🎬 Featured Video — The one that went viral</p>
+                <div class="tiktok-embed-wrapper">
+                    <blockquote class="tiktok-embed"
+                        cite="https://www.tiktok.com/@sweetiescandy.nyc/video/7644700782494797069"
+                        data-video-id="7644700782494797069"
+                        data-embed-from="oembed"
+                        style="max-width: 605px; min-width: 325px;">
+                        <section>
+                            <a target="_blank" title="@sweetiescandy.nyc" href="https://www.tiktok.com/@sweetiescandy.nyc?refer=embed">@sweetiescandy.nyc</a>
+                        </section>
+                    </blockquote>
+                    <script async src="https://www.tiktok.com/embed.js"></script>
+                </div>
+                <p class="video-caption">📍 Sweeties Candy Shop · NYC · <a href="https://www.tiktok.com/@sweetiescandy.nyc" target="_blank" rel="noopener noreferrer" class="tiktok-link">@sweetiescandy.nyc</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- WEB DEV CASE STUDY -->
+    <section class="case-study web-section" id="webdev">
+        <div class="container">
+            <p class="section-label web-label">Case Study · Web Development</p>
+            <h2 class="section-title">A full website for a<br><span class="highlight-green">local comic book shop.</span></h2>
+            <p class="case-study-desc">Comic Book Hideout in Fullerton, CA needed a website that matched the energy of their store — bold, full of character, and easy to navigate for both new and returning customers.</p>
+
+            <div class="project-showcase">
+                <div class="project-image-wrapper">
+                    <div class="browser-bar">
+                        <div class="browser-dots">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <div class="browser-url">comicbookhideout.com</div>
+                    </div>
+                    <img
+                        src="assets/comicbookhideout.png"
+                        alt="Comic Book Hideout website screenshot"
+                        class="project-screenshot"
+                        id="cbh-screenshot"
+                    />
+                </div>
+                <div class="project-details">
+                    <div class="project-tag">🏪 Local Business Website</div>
+                    <h3 class="project-name">Comic Book Hideout</h3>
+                    <p class="project-desc">Built a complete website including homepage, videos section, music studio page, online store, testimonials, and more — giving this beloved Fullerton shop a digital home that reflects their unique personality.</p>
+                    <ul class="project-features">
+                        <li>✓ Multi-page website with custom navigation</li>
+                        <li>✓ Online store integration</li>
+                        <li>✓ Videos &amp; music studio showcase</li>
+                        <li>✓ Testimonials &amp; about pages</li>
+                        <li>✓ Mobile responsive design</li>
+                    </ul>
+                    <a href="https://comicbookhideout.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="cbh-visit-btn">Visit Live Site →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA / CONTACT -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="contact-card">
+                <div class="contact-bg-orbs">
+                    <div class="contact-orb contact-orb-1"></div>
+                    <div class="contact-orb contact-orb-2"></div>
+                </div>
+                <p class="section-label contact-label">Let's Work Together</p>
+                <h2 class="contact-title">Interested in working together?</h2>
+                <p class="contact-desc">If you're looking to build a website or grow your brand on social media, feel free to reach out. I'm happy to chat about your goals and see if it's a good fit.</p>
+                <div class="contact-buttons">
+                    <a href="mailto:brianzloh@gmail.com" class="btn btn-primary btn-large" id="contact-email-btn">
+                        📧 brianzloh@gmail.com
+                    </a>
+                </div>
+                <div class="contact-links">
+                    <a href="https://brianloh.dev" target="_blank" rel="noopener noreferrer" class="contact-social-link" id="contact-main-site">Main Portfolio</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <p>© 2026 Brian Loh · <a href="https://brianloh.dev">brianloh.dev</a></p>
+            <p class="footer-sub">New York City, NY</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
