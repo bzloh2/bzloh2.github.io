@@ -61,7 +61,7 @@ const fadeObserver = new IntersectionObserver((entries) => {
 
 // Apply initial hidden state + observe
 const animatedEls = document.querySelectorAll(
-    '.service-card, .stat-card, .project-showcase, .contact-card, .video-section'
+    '.service-card, .stat-card, .project-showcase, .contact-card, .video-section, .skills-showcase, .social-cta, .personal-tiktok-card, .client-case-divider'
 );
 animatedEls.forEach(el => {
     el.style.opacity = '0';
