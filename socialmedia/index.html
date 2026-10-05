@@ -8,17 +8,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/nav.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <!-- NAV -->
-    <nav class="nav" id="nav">
-        <div class="nav-inner">
-            <a href="/" class="nav-logo">← brianloh.dev</a>
-            <div class="nav-links">
-                <a href="/gallery/" class="nav-link" style="color: #f472b6; font-size: 0.85rem; text-decoration: none; font-weight: 600; padding: 4px 12px; border-radius: 20px; border: 1px solid rgba(244,114,182,0.3);">📸 Photo Gallery</a>
-                <span class="nav-title">Social Media &amp; Web</span>
+    <nav class="site-nav" id="site-nav">
+        <div class="site-nav-inner">
+            <a href="/" class="site-nav-name">Brian Loh</a>
+            <div class="site-nav-links">
+                <a href="mailto:brianzloh@gmail.com" class="site-nav-link nav-email">📧 Email Me</a>
+                <a href="/" class="site-nav-link nav-dev">💻 Developer</a>
+                <a href="/socialmedia/" class="site-nav-link nav-social">🎥 Social</a>
+                <a href="/gallery/" class="site-nav-link nav-gallery">📸 Gallery</a>
             </div>
         </div>
     </nav>
@@ -78,6 +81,11 @@
                         <li>SEO &amp; performance optimization</li>
                     </ul>
                 </div>
+            </div>
+            <div class="services-gallery-cta">
+                <a href="/gallery/" class="btn btn-ghost services-gallery-btn">
+                    📸&nbsp; See My Photography Portfolio →
+                </a>
             </div>
         </div>
     </section>
@@ -358,5 +366,11 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+        const siteNav = document.getElementById('site-nav');
+        window.addEventListener('scroll', () => {
+            siteNav.classList.toggle('scrolled', window.scrollY > 10);
+        });
+    </script>
 </body>
 </html>
