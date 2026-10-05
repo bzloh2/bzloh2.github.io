@@ -23,6 +23,8 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentIndex = 0;
     let visibleItems = [...items];
 
+    const categoryHeaders = document.querySelectorAll('.category-header');
+
     // --------------------------------------------
     // FILTERING
     // --------------------------------------------
@@ -33,6 +35,25 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const filter = btn.dataset.filter;
 
+            // Filter headers
+            categoryHeaders.forEach(header => {
+                const headerCat = header.dataset.category;
+                if (filter === 'all' || headerCat === filter) {
+                    header.style.display = 'block';
+                    setTimeout(() => {
+                        header.style.opacity = '1';
+                        header.style.transform = 'translateY(0)';
+                    }, 10);
+                } else {
+                    header.style.opacity = '0';
+                    header.style.transform = 'translateY(-6px)';
+                    setTimeout(() => {
+                        header.style.display = 'none';
+                    }, 200);
+                }
+            });
+
+            // Filter photo items
             items.forEach(item => {
                 const category = item.dataset.category;
                 if (filter === 'all' || category === filter) {

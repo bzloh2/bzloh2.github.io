@@ -43,12 +43,20 @@
         <div class="container">
             <!-- Filter Bar -->
             <div class="filter-bar">
-                <button class="filter-btn active" data-filter="events">Events <span class="filter-count">5</span></button>
-                <button class="filter-btn" data-filter="all">All Photos <span class="filter-count">5</span></button>
+                <button class="filter-btn active" data-filter="all">All Photos <span class="filter-count">8</span></button>
+                <button class="filter-btn" data-filter="events">Events <span class="filter-count">5</span></button>
+                <button class="filter-btn" data-filter="products">Product Photography <span class="filter-count">3</span></button>
             </div>
 
             <!-- Photos Grid -->
             <div class="gallery-grid" id="gallery-grid">
+
+                <!-- CATEGORY: EVENTS -->
+                <div class="category-header" data-category="events">
+                    <span class="category-pill">Category</span>
+                    <h2 class="category-title">Events</h2>
+                    <p class="category-subtitle">Candid moments, celebrations, and gatherings.</p>
+                </div>
 
                 <!-- 1. Times Square Confetti -->
                 <div class="gallery-item item-tall" data-category="events" data-index="0"
@@ -170,6 +178,88 @@
                             <div class="item-meta-bottom">
                                 <h3 class="item-title">Lounge Bar After Hours</h3>
                                 <p class="item-sub">New York City, NY</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CATEGORY: PRODUCT PHOTOGRAPHY -->
+                <div class="category-header category-header-products" data-category="products">
+                    <span class="category-pill pill-cyan">Category</span>
+                    <h2 class="category-title">Product Photography</h2>
+                    <p class="category-subtitle">Commercial stills, product staging, and studio lighting.</p>
+                </div>
+
+                <!-- 6. Curry Sneakers Floating -->
+                <div class="gallery-item item-square" data-category="products" data-index="5"
+                     data-src="assets/products/curry-sneakers-floating.jpg"
+                     data-title="Curry Flow Basketball Sneaker"
+                     data-location="Studio Production"
+                     data-category-label="Product Photography · Footwear"
+                     data-caption="Commercial sneaker studio photography featuring floating dual-angle composition and directional rim lighting against clean backdrop.">
+                    <div class="image-wrapper">
+                        <img src="assets/products/curry-sneakers-floating.jpg" 
+                             alt="Curry Brand basketball shoes floating in studio setup" 
+                             loading="lazy" 
+                             class="gallery-img">
+                        <div class="item-overlay">
+                            <div class="item-meta-top">
+                                <span class="item-tag tag-cyan">Product Photography</span>
+                                <span class="item-zoom-icon">🔍 View</span>
+                            </div>
+                            <div class="item-meta-bottom">
+                                <h3 class="item-title">Curry Flow Basketball Sneaker</h3>
+                                <p class="item-sub">Studio Production · Footwear</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 7. Cento Tomatoes Garden -->
+                <div class="gallery-item item-square" data-category="products" data-index="6"
+                     data-src="assets/products/cento-tomatoes-garden.jpg"
+                     data-title="Cento Italian Peeled Tomatoes"
+                     data-location="Field &amp; Garden Stills"
+                     data-category-label="Product Photography · Commercial Food"
+                     data-caption="Natural daylight product composition set in an organic tomato garden emphasizing farm-fresh authenticity and rich colors.">
+                    <div class="image-wrapper">
+                        <img src="assets/products/cento-tomatoes-garden.jpg" 
+                             alt="Cento Italian style peeled tomatoes can in garden with fresh tomatoes" 
+                             loading="lazy" 
+                             class="gallery-img">
+                        <div class="item-overlay">
+                            <div class="item-meta-top">
+                                <span class="item-tag tag-cyan">Product Photography</span>
+                                <span class="item-zoom-icon">🔍 View</span>
+                            </div>
+                            <div class="item-meta-bottom">
+                                <h3 class="item-title">Cento Italian Peeled Tomatoes</h3>
+                                <p class="item-sub">Field &amp; Garden Stills</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 8. Keeper Playing Cards Levitation -->
+                <div class="gallery-item item-square" data-category="products" data-index="7"
+                     data-src="assets/products/keeper-playing-cards-levitation.jpg"
+                     data-title="Keeper Sea Green Playing Cards"
+                     data-location="Studio Tabletop"
+                     data-category-label="Product Photography · Tabletop"
+                     data-caption="High-contrast levitation product still with shallow depth of field, framing the card deck against a scattered bokeh background.">
+                    <div class="image-wrapper">
+                        <img src="assets/products/keeper-playing-cards-levitation.jpg" 
+                             alt="Keeper sea green playing cards levitating above scattered deck" 
+                             loading="lazy" 
+                             class="gallery-img">
+                        <div class="item-overlay">
+                            <div class="item-meta-top">
+                                <span class="item-tag tag-cyan">Product Photography</span>
+                                <span class="item-zoom-icon">🔍 View</span>
+                            </div>
+                            <div class="item-meta-bottom">
+                                <h3 class="item-title">Keeper Sea Green Playing Cards</h3>
+                                <p class="item-sub">Studio Tabletop</p>
                             </div>
                         </div>
                     </div>
