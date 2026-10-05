@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brian Loh — Photography Gallery</title>
+    <meta name="description" content="Photography portfolio by Brian Loh. Event photography, nightlife, and visual storytelling in NYC and beyond.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- NAV -->
+    <nav class="nav" id="nav">
+        <div class="nav-inner">
+            <a href="/" class="nav-logo">← brianloh.dev</a>
+            <div class="nav-links">
+                <a href="/socialmedia/" class="nav-link">🎥 Social Media</a>
+                <a href="/gallery/" class="nav-link active">📸 Gallery</a>
+                <a href="https://www.instagram.com/brianlohmedia" target="_blank" rel="noopener noreferrer" class="nav-link ig-pill">@brianlohmedia</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="gallery-hero">
+        <div class="hero-bg-orbs">
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+        </div>
+        <div class="container hero-content">
+            <div class="hero-badge">📸 Photography Portfolio</div>
+            <h1 class="hero-title">Captured in <span class="highlight">Motion.</span></h1>
+            <p class="hero-subtitle">Events, gatherings, and candid moments behind the camera.</p>
+            <p class="hero-meta">By Brian Loh · Based in New York City · <a href="https://www.instagram.com/brianlohmedia" target="_blank" rel="noopener noreferrer" class="hero-ig-link">@brianlohmedia</a></p>
+        </div>
+    </header>
+
+    <!-- GALLERY SECTION -->
+    <main class="gallery-section">
+        <div class="container">
+            <!-- Filter Bar -->
+            <div class="filter-bar">
+                <button class="filter-btn active" data-filter="all">All Photos <span class="filter-count">11</span></button>
+                <button class="filter-btn" data-filter="events">Events <span class="filter-count">5</span></button>
+                <button class="filter-btn" data-filter="products">Product Photography <span class="filter-count">3</span></button>
+                <button class="filter-btn" data-filter="portraits">Portraits <span class="filter-count">3</span></button>
+            </div>
+
+            <!-- Photos Grid -->
+            <div class="gallery-grid" id="gallery-grid">
+
+                <!-- CATEGORY: EVENTS -->
+                <div class="category-header" data-category="events">
+                    <span class="category-pill">Category</span>
+                    <h2 class="category-title">Events</h2>
+                    <p class="category-subtitle">Candid moments, celebrations, and gatherings.</p>
+                </div>
+
+                <!-- 1. Times Square Confetti -->
+                <div class="gallery-item item-tall" data-category="events" data-index="0"
+                     data-src="assets/events/times-square-confetti-night.jpg"
+                     data-title="Times Square Midnight Confetti"
+                     data-location="New York City, NY"
+                     data-category-label="Events · Nightlife"
+                     data-caption="Confetti raining over thousands of celebrants framed by towering Broadway billboards and nighttime city glow.">
+                    <div class="image-wrapper">
+                        <img src="assets/events/times-square-confetti-night.jpg" 
+                             alt="Confetti in Times Square NYC celebration" 
+                             loading="lazy" 
+                             class="gallery-img">
+                        <div class="item-overlay">
+                            <div class="item-meta-top">
+                                <span class="item-tag">Events</span>
+                                <span class="item-zoom-icon">🔍 View</span>
+                            </div>
+                            <div class="item-meta-bottom">
+                                <h3 class="item-title">Times Square Midnight Confetti</h3>
+                                <p class="item-sub">New York City, NY</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. Kite Festival Wide -->
+                <div class="gallery-item item-wide" data-category="events" data-index="1"
+                     data-src="assets/events/kite-festival-lincoln-memorial.jpg"
+                     data-title="Spring Kite Festival at Lincoln Memorial"
+                     data-location="Washington, DC"
+                     data-category-label="Events · Festival"
+                     data-caption="A wide panoramic perspective overlooking the National Mall as hundreds of vibrant kites fill the spring sky over the Lincoln Memorial grounds.">
+                    <div class="image-wrapper">
+                        <img src="assets/events/kite-festival-lincoln-memorial.jpg" 
+                             alt="Blossom Kite Festival on the National Mall in Washington DC" 
+                             loading="lazy" 
+                             class="gallery-img">
+                        <div class="item-overlay">
+                            <div class="item-meta-top">
+                                <span class="item-tag">Events</span>
+                                <span class="item-zoom-icon">🔍 View</span>
+                            </div>
+                            <div class="item-meta-bottom">
+                                <h3 class="item-title">Spring Kite Festival at Lincoln Memorial</h3>
+                                <p class="item-sub">Washington, DC</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. Kite Festival Vertical -->
+                <div class="gallery-item item-tall" data-category="events" data-index="2"
+                     data-src="assets/events/kite-festival-dc-vertical.jpg"
+                     data-title="Color in the Skies"
+                     data-location="Washington, DC"
+                     data-category-label="Events · Festival"
+                     data-caption="Up-close view of crowds on the grass beneath American flags, watching colorful kites drift across the overcast capital skies.">
+                    <div class="image-wrapper">
+                        <img src="assets/events/kite-festival-dc-vertical.jpg" 
+                             alt="Spectators and kites flying high at Washington DC festival" 
+                             loading="lazy" 
+                             class="gallery-img">
+                        <div class="item-overlay">
+                            <div class="item-meta-top">
+                                <span class="item-tag">Events</span>
+                                <span class="item-zoom-icon">🔍 View</span>
+                            </div>
+                            <div class="item-meta-bottom">
+                                <h3 class="item-title">Color in the Skies</h3>
+                                <p class="item-sub">Washington, DC</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. Nightlife Rooftop Flash -->
+                <div class="gallery-item" data-category="events" data-index="3"
+                     data-src="assets/events/nightlife-outdoor-social.jpg"
+                     data-title="Late Night Rooftop Social"
+                     data-location="New York City, NY"
+                     data-category-label="Events · Social"
+                     data-caption="High-energy candid portraiture captured with direct flash on an NYC outdoor terrace under string lights.">
+                    <div class="image-wrapper">
+                        <img src="assets/events/nightlife-outdoor-social.jpg" 
+                             alt="Friends laughing and looking at phone at outdoor evening event" 
+                             loading="lazy" 
+                             class="gallery-img">
+                        <div class="item-overlay">
+                            <div class="item-meta-top">
+                                <span class="item-tag">Events</span>
+                                <span class="item-zoom-icon">🔍 View</span>
+                            </div>
+                            <div class="item-meta-bottom">
+                                <h3 class="item-title">Late Night Rooftop Social</h3>
+                                <p class="item-sub">New York City, NY</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. Cocktail Lounge Gathering -->
+                <div class="gallery-item" data-category="events" data-index="4"
+                     data-src="assets/events/cocktail-lounge-party.jpg"
+                     data-title="Lounge Bar After Hours"
+                     data-location="New York City, NY"
+                     data-category-label="Events · Social"
+                     data-caption="Warm ambient lights, table lamps, and genuine social connection at an upscale evening venue.">
+                    <div class="image-wrapper">
+                        <img src="assets/events/cocktail-lounge-party.jpg" 
+                             alt="Guests smiling and talking at illuminated bar counter" 
+                             loading="lazy" 
+                             class="gallery-img">
+                        <div class="item-overlay">
+                            <div class="item-meta-top">
+                                <span class="item-tag">Events</span>
+                                <span class="item-zoom-icon">🔍 View</span>
+                            </div>
+                            <div class="item-meta-bottom">
+                                <h3 class="item-title">Lounge Bar After Hours</h3>
+                                <p class="item-sub">New York City, NY</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CATEGORY: PRODUCT PHOTOGRAPHY -->
+                <div class="category-header category-header-products" data-category="products">
+                    <span class="category-pill pill-cyan">Category</span>
+                    <h2 class="category-title">Product Photography</h2>
+                    <p class="category-subtitle">Commercial stills, product staging, and studio lighting.</p>
+                </div>
+
+                <!-- 6. Curry Sneakers Floating -->
+                <div class="gallery-item item-square" data-category="products" data-index="5"
+                     data-src="assets/products/curry-sneakers-floating.jpg"
+                     data-title="Curry Flow Basketball Sneaker"
+                     data-location="Studio Production"
+                     data-category-label="Product Photography · Footwear"
+                     data-caption="Commercial sneaker studio photography featuring floating dual-angle composition and directional rim lighting against clean backdrop.">
+                    <div class="image-wrapper">
+                        <img src="assets/products/curry-sneakers-floating.jpg" 
+                             alt="Curry Brand basketball shoes floating in studio setup" 
+                             loading="lazy" 
+                             class="gallery-img">
+                        <div class="item-overlay">
+                            <div class="item-meta-top">
+                                <span class="item-tag tag-cyan">Product Photography</span>
+                                <span class="item-zoom-icon">🔍 View</span>
+                            </div>
+                            <div class="item-meta-bottom">
+                                <h3 class="item-title">Curry Flow Basketball Sneaker</h3>
+                                <p class="item-sub">Studio Production · Footwear</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 7. Cento Tomatoes Garden -->
+                <div class="gallery-item item-square" data-category="products" data-index="6"
+                     data-src="assets/products/cento-tomatoes-garden.jpg"
+                     data-title="Cento Italian Peeled Tomatoes"
+                     data-location="Field &amp; Garden Stills"
+                     data-category-label="Product Photography · Commercial Food"
+                     data-caption="Natural daylight product composition set in an organic tomato garden emphasizing farm-fresh authenticity and rich colors.">
+                    <div class="image-wrapper">
+                        <img src="assets/products/cento-tomatoes-garden.jpg" 
+                             alt="Cento Italian style peeled tomatoes can in garden with fresh tomatoes" 
+                             loading="lazy" 
+                             class="gallery-img">
+                        <div class="item-overlay">
+                            <div class="item-meta-top">
+                                <span class="item-tag tag-cyan">Product Photography</span>
+                                <span class="item-zoom-icon">🔍 View</span>
+                            </div>
+                            <div class="item-meta-bottom">
+                                <h3 class="item-title">Cento Italian Peeled Tomatoes</h3>
+                                <p class="item-sub">Field &amp; Garden Stills</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 8. Keeper Playing Cards Levitation -->
+                <div class="gallery-item item-square" data-category="products" data-index="7"
+                     data-src="assets/products/keeper-playing-cards-levitation.jpg"
+                     data-title="Keeper Sea Green Playing Cards"
+                     data-location="Studio Tabletop"
+                     data-category-label="Product Photography · Tabletop"
+                     data-caption="High-contrast levitation product still with shallow depth of field, framing the card deck against a scattered bokeh background.">
+                    <div class="image-wrapper">
+                        <img src="assets/products/keeper-playing-cards-levitation.jpg" 
+                             alt="Keeper sea green playing cards levitating above scattered deck" 
+                             loading="lazy" 
+                             class="gallery-img">
+                        <div class="item-overlay">
+                            <div class="item-meta-top">
+                                <span class="item-tag tag-cyan">Product Photography</span>
+                                <span class="item-zoom-icon">🔍 View</span>
+                            </div>
+                            <div class="item-meta-bottom">
+                                <h3 class="item-title">Keeper Sea Green Playing Cards</h3>
+                                <p class="item-sub">Studio Tabletop</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CATEGORY: PORTRAITS -->
+                <div class="category-header category-header-portraits" data-category="portraits">
+                    <span class="category-pill pill-purple">Category</span>
+                    <h2 class="category-title">Portraits</h2>
+                    <p class="category-subtitle">Professional headshots, lifestyle portraits, and creative editorial sessions.</p>
+                </div>
+
+                <!-- 9. Medical School Headshot -->
+                <div class="gallery-item item-tall" data-category="portraits" data-index="8"
+                     data-src="assets/portraits/medical-school-headshot-portrait.jpg"
+                     data-title="Professional Medical Headshot"
+                     data-location="Ann Arbor, MI"
+                     data-category-label="Portraits · Headshots"
+                     data-caption="Natural daylight professional portrait outside the University of Michigan Medical School building in white coat attire.">
+                    <div class="image-wrapper">
+                        <img src="assets/portraits/medical-school-headshot-portrait.jpg" 
+                             alt="Professional medical school headshot in white lab coat" 
+                             loading="lazy" 
+                             class="gallery-img">
+                        <div class="item-overlay">
+                            <div class="item-meta-top">
+                                <span class="item-tag tag-purple">Portraits</span>
+                                <span class="item-zoom-icon">🔍 View</span>
+                            </div>
+                            <div class="item-meta-bottom">
+                                <h3 class="item-title">Professional Medical Headshot</h3>
+                                <p class="item-sub">Ann Arbor, MI · University of Michigan</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 10. City Lights Lifestyle Portrait -->
+                <div class="gallery-item item-wide" data-category="portraits" data-index="9"
+                     data-src="assets/portraits/cinematic-night-lifestyle-portrait.jpg"
+                     data-title="City Lights Evening Portrait"
+                     data-location="New York City, NY"
+                     data-category-label="Portraits · Lifestyle"
+                     data-caption="Cinematic evening portraiture illuminated with warm ambient city bokeh and subtle direct flash.">
+                    <div class="image-wrapper">
+                        <img src="assets/portraits/cinematic-night-lifestyle-portrait.jpg" 
+                             alt="Man in tan jacket in evening city portrait with glowing background lights" 
+                             loading="lazy" 
+                             class="gallery-img">
+                        <div class="item-overlay">
+                            <div class="item-meta-top">
+                                <span class="item-tag tag-purple">Portraits</span>
+                                <span class="item-zoom-icon">🔍 View</span>
+                            </div>
+                            <div class="item-meta-bottom">
+                                <h3 class="item-title">City Lights Evening Portrait</h3>
+                                <p class="item-sub">New York City, NY · Lifestyle</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 11. Velvet Lounge Editorial -->
+                <div class="gallery-item item-tall" data-category="portraits" data-index="10"
+                     data-src="assets/portraits/editorial-fashion-couch-portrait.jpg"
+                     data-title="Velvet Lounge Editorial"
+                     data-location="New York City, NY"
+                     data-category-label="Portraits · Editorial"
+                     data-caption="Bold editorial portrait on a plush gold velvet couch featuring direct flash, expressive styling, and rich color contrast.">
+                    <div class="image-wrapper">
+                        <img src="assets/portraits/editorial-fashion-couch-portrait.jpg" 
+                             alt="Editorial fashion portrait of woman on gold velvet sofa" 
+                             loading="lazy" 
+                             class="gallery-img">
+                        <div class="item-overlay">
+                            <div class="item-meta-top">
+                                <span class="item-tag tag-purple">Portraits</span>
+                                <span class="item-zoom-icon">🔍 View</span>
+                            </div>
+                            <div class="item-meta-bottom">
+                                <h3 class="item-title">Velvet Lounge Editorial</h3>
+                                <p class="item-sub">New York City, NY · Creative Fashion</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- LIGHTBOX MODAL -->
+    <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog">
+        <div class="lightbox-backdrop" id="lightbox-backdrop"></div>
+        <div class="lightbox-container">
+            <button class="lightbox-close" id="lightbox-close" aria-label="Close image">✕</button>
+            <button class="lightbox-prev" id="lightbox-prev" aria-label="Previous image">‹</button>
+            <button class="lightbox-next" id="lightbox-next" aria-label="Next image">›</button>
+
+            <div class="lightbox-content">
+                <div class="lightbox-image-wrap">
+                    <img src="" alt="" id="lightbox-img" class="lightbox-img">
+                </div>
+                <div class="lightbox-details">
+                    <div class="lightbox-tags">
+                        <span class="lightbox-category" id="lightbox-category">Events</span>
+                        <span class="lightbox-location" id="lightbox-location">📍 New York City</span>
+                    </div>
+                    <h2 class="lightbox-title" id="lightbox-title">Photo Title</h2>
+                    <p class="lightbox-caption" id="lightbox-caption">Photo description goes here.</p>
+                    <div class="lightbox-footer">
+                        <span class="lightbox-counter" id="lightbox-counter">1 of 5</span>
+                        <a href="https://www.instagram.com/brianlohmedia" target="_blank" rel="noopener noreferrer" class="lightbox-ig-btn">View on @brianlohmedia →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BOOKING / CONTACT CTA -->
+    <section class="gallery-cta">
+        <div class="container">
+            <div class="cta-card">
+                <span class="cta-badge">📸 Event &amp; Commercial Photography</span>
+                <h2 class="cta-title">Need photo coverage for your next event?</h2>
+                <p class="cta-desc">From festivals and nightlife to private gatherings and brand activations, I capture moments that tell a story.</p>
+                <div class="cta-actions">
+                    <a href="mailto:brianzloh@gmail.com?subject=Event%20Photography%20Inquiry" class="btn btn-primary">Book Event Coverage</a>
+                    <a href="https://www.instagram.com/brianlohmedia" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">Follow @brianlohmedia</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <p>© 2026 Brian Loh · <a href="/">brianloh.dev</a> · <a href="/socialmedia/">Social Media &amp; Web</a></p>
+            <p class="footer-sub">Photography &amp; Creative Media · New York City, NY</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
