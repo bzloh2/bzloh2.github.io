@@ -300,7 +300,8 @@ body {
     transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-.category-header-products {
+.category-header-products,
+.category-header-portraits {
     margin-top: 48px;
 }
 
@@ -324,6 +325,12 @@ body {
     border-color: rgba(56, 189, 248, 0.3);
 }
 
+.category-pill.pill-purple {
+    color: #c084fc;
+    background: rgba(192, 132, 252, 0.15);
+    border-color: rgba(192, 132, 252, 0.35);
+}
+
 .category-title {
     font-size: clamp(1.6rem, 3.5vw, 2.2rem);
     font-weight: 800;
@@ -341,6 +348,12 @@ body {
     background: rgba(56, 189, 248, 0.15);
     border-color: rgba(56, 189, 248, 0.35);
     color: #38bdf8;
+}
+
+.item-tag.tag-purple {
+    background: rgba(192, 132, 252, 0.18);
+    border-color: rgba(192, 132, 252, 0.4);
+    color: #e9d5ff;
 }
 
 /* Layout Variety */
@@ -402,6 +415,21 @@ body {
         /* Product photos square */
         grid-column: span 4;
         aspect-ratio: 1 / 1;
+    }
+    .gallery-item[data-index="8"] {
+        /* Medical school headshot */
+        grid-column: span 4;
+        aspect-ratio: 3 / 4;
+    }
+    .gallery-item[data-index="9"] {
+        /* City lights evening portrait */
+        grid-column: span 4;
+        aspect-ratio: 4 / 3;
+    }
+    .gallery-item[data-index="10"] {
+        /* Velvet lounge editorial */
+        grid-column: span 4;
+        aspect-ratio: 3 / 4;
     }
 }
 
