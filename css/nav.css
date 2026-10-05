@@ -132,16 +132,6 @@
     box-shadow: 0 0 16px rgba(192, 132, 252, 0.15);
 }
 
-/* ── Active state (current page) ── */
-.site-nav-link.active {
-    font-weight: 600;
-    color: #fff;
-}
-
-.site-nav-link.nav-email.active   { background: rgba(96, 165, 250, 0.15);  border-color: rgba(96, 165, 250, 0.4); }
-.site-nav-link.nav-dev.active     { background: rgba(52, 211, 153, 0.15);  border-color: rgba(52, 211, 153, 0.4); }
-.site-nav-link.nav-gallery.active { background: rgba(244, 114, 182, 0.15); border-color: rgba(244, 114, 182, 0.4); }
-.site-nav-link.nav-social.active  { background: rgba(192, 132, 252, 0.15); border-color: rgba(192, 132, 252, 0.4); }
 
 /* ── Push page body down by nav height ── */
 body {
