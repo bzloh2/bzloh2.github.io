@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brian Loh — Photography Gallery</title>
+    <meta name="description" content="Photography portfolio by Brian Loh. Event photography, nightlife, and visual storytelling in NYC and beyond.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- NAV -->
+    <nav class="nav" id="nav">
+        <div class="nav-inner">
+            <a href="/" class="nav-logo">← brianloh.dev</a>
+            <div class="nav-links">
+                <a href="/socialmedia/" class="nav-link">🎥 Social Media</a>
+                <a href="/gallery/" class="nav-link active">📸 Gallery</a>
+                <a href="https://www.instagram.com/brianlohmedia" target="_blank" rel="noopener noreferrer" class="nav-link ig-pill">@brianlohmedia</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="gallery-hero">
+        <div class="hero-bg-orbs">
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+        </div>
+        <div class="container hero-content">
+            <div class="hero-badge">📸 Photography Portfolio</div>
+            <h1 class="hero-title">Captured in <span class="highlight">Motion.</span></h1>
+            <p class="hero-subtitle">Events, gatherings, and candid moments behind the camera.</p>
+            <p class="hero-meta">By Brian Loh · Based in New York City · <a href="https://www.instagram.com/brianlohmedia" target="_blank" rel="noopener noreferrer" class="hero-ig-link">@brianlohmedia</a></p>
+        </div>
+    </header>
+
+    <!-- GALLERY SECTION -->
+    <main class="gallery-section">
+        <div class="container">
+            <!-- Filter Bar -->
+            <div class="filter-bar">
+                <button class="filter-btn active" data-filter="events">Events <span class="filter-count">5</span></button>
+                <button class="filter-btn" data-filter="all">All Photos <span class="filter-count">5</span></button>
+            </div>
+
+            <!-- Photos Grid -->
+            <div class="gallery-grid" id="gallery-grid">
+
+                <!-- 1. Times Square Confetti -->
+                <div class="gallery-item item-tall" data-category="events" data-index="0"
+                     data-src="assets/events/times-square-confetti-night.jpg"
+                     data-title="Times Square Midnight Confetti"
+                     data-location="New York City, NY"
+                     data-category-label="Events · Nightlife"
+                     data-caption="Confetti raining over thousands of celebrants framed by towering Broadway billboards and nighttime city glow.">
+                    <div class="image-wrapper">
+                        <img src="assets/events/times-square-confetti-night.jpg" 
+                             alt="Confetti in Times Square NYC celebration" 
+                             loading="lazy" 
+                             class="gallery-img">
+                        <div class="item-overlay">
+                            <div class="item-meta-top">
+                                <span class="item-tag">Events</span>
+                                <span class="item-zoom-icon">🔍 View</span>
+                            </div>
+                            <div class="item-meta-bottom">
+                                <h3 class="item-title">Times Square Midnight Confetti</h3>
+                                <p class="item-sub">New York City, NY</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. Kite Festival Wide -->
+                <div class="gallery-item item-wide" data-category="events" data-index="1"
+                     data-src="assets/events/kite-festival-lincoln-memorial.jpg"
+                     data-title="Spring Kite Festival at Lincoln Memorial"
+                     data-location="Washington, DC"
+                     data-category-label="Events · Festival"
+                     data-caption="A wide panoramic perspective overlooking the National Mall as hundreds of vibrant kites fill the spring sky over the Lincoln Memorial grounds.">
+                    <div class="image-wrapper">
+                        <img src="assets/events/kite-festival-lincoln-memorial.jpg" 
+                             alt="Blossom Kite Festival on the National Mall in Washington DC" 
+                             loading="lazy" 
+                             class="gallery-img">
+                        <div class="item-overlay">
+                            <div class="item-meta-top">
+                                <span class="item-tag">Events</span>
+                                <span class="item-zoom-icon">🔍 View</span>
+                            </div>
+                            <div class="item-meta-bottom">
+                                <h3 class="item-title">Spring Kite Festival at Lincoln Memorial</h3>
+                                <p class="item-sub">Washington, DC</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. Kite Festival Vertical -->
+                <div class="gallery-item item-tall" data-category="events" data-index="2"
+                     data-src="assets/events/kite-festival-dc-vertical.jpg"
+                     data-title="Color in the Skies"
+                     data-location="Washington, DC"
+                     data-category-label="Events · Festival"
+                     data-caption="Up-close view of crowds on the grass beneath American flags, watching colorful kites drift across the overcast capital skies.">
+                    <div class="image-wrapper">
+                        <img src="assets/events/kite-festival-dc-vertical.jpg" 
+                             alt="Spectators and kites flying high at Washington DC festival" 
+                             loading="lazy" 
+                             class="gallery-img">
+                        <div class="item-overlay">
+                            <div class="item-meta-top">
+                                <span class="item-tag">Events</span>
+                                <span class="item-zoom-icon">🔍 View</span>
+                            </div>
+                            <div class="item-meta-bottom">
+                                <h3 class="item-title">Color in the Skies</h3>
+                                <p class="item-sub">Washington, DC</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. Nightlife Rooftop Flash -->
+                <div class="gallery-item" data-category="events" data-index="3"
+                     data-src="assets/events/nightlife-outdoor-social.jpg"
+                     data-title="Late Night Rooftop Social"
+                     data-location="New York City, NY"
+                     data-category-label="Events · Social"
+                     data-caption="High-energy candid portraiture captured with direct flash on an NYC outdoor terrace under string lights.">
+                    <div class="image-wrapper">
+                        <img src="assets/events/nightlife-outdoor-social.jpg" 
+                             alt="Friends laughing and looking at phone at outdoor evening event" 
+                             loading="lazy" 
+                             class="gallery-img">
+                        <div class="item-overlay">
+                            <div class="item-meta-top">
+                                <span class="item-tag">Events</span>
+                                <span class="item-zoom-icon">🔍 View</span>
+                            </div>
+                            <div class="item-meta-bottom">
+                                <h3 class="item-title">Late Night Rooftop Social</h3>
+                                <p class="item-sub">New York City, NY</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. Cocktail Lounge Gathering -->
+                <div class="gallery-item" data-category="events" data-index="4"
+                     data-src="assets/events/cocktail-lounge-party.jpg"
+                     data-title="Lounge Bar After Hours"
+                     data-location="New York City, NY"
+                     data-category-label="Events · Social"
+                     data-caption="Warm ambient lights, table lamps, and genuine social connection at an upscale evening venue.">
+                    <div class="image-wrapper">
+                        <img src="assets/events/cocktail-lounge-party.jpg" 
+                             alt="Guests smiling and talking at illuminated bar counter" 
+                             loading="lazy" 
+                             class="gallery-img">
+                        <div class="item-overlay">
+                            <div class="item-meta-top">
+                                <span class="item-tag">Events</span>
+                                <span class="item-zoom-icon">🔍 View</span>
+                            </div>
+                            <div class="item-meta-bottom">
+                                <h3 class="item-title">Lounge Bar After Hours</h3>
+                                <p class="item-sub">New York City, NY</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- LIGHTBOX MODAL -->
+    <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog">
+        <div class="lightbox-backdrop" id="lightbox-backdrop"></div>
+        <div class="lightbox-container">
+            <button class="lightbox-close" id="lightbox-close" aria-label="Close image">✕</button>
+            <button class="lightbox-prev" id="lightbox-prev" aria-label="Previous image">‹</button>
+            <button class="lightbox-next" id="lightbox-next" aria-label="Next image">›</button>
+
+            <div class="lightbox-content">
+                <div class="lightbox-image-wrap">
+                    <img src="" alt="" id="lightbox-img" class="lightbox-img">
+                </div>
+                <div class="lightbox-details">
+                    <div class="lightbox-tags">
+                        <span class="lightbox-category" id="lightbox-category">Events</span>
+                        <span class="lightbox-location" id="lightbox-location">📍 New York City</span>
+                    </div>
+                    <h2 class="lightbox-title" id="lightbox-title">Photo Title</h2>
+                    <p class="lightbox-caption" id="lightbox-caption">Photo description goes here.</p>
+                    <div class="lightbox-footer">
+                        <span class="lightbox-counter" id="lightbox-counter">1 of 5</span>
+                        <a href="https://www.instagram.com/brianlohmedia" target="_blank" rel="noopener noreferrer" class="lightbox-ig-btn">View on @brianlohmedia →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BOOKING / CONTACT CTA -->
+    <section class="gallery-cta">
+        <div class="container">
+            <div class="cta-card">
+                <span class="cta-badge">📸 Event &amp; Commercial Photography</span>
+                <h2 class="cta-title">Need photo coverage for your next event?</h2>
+                <p class="cta-desc">From festivals and nightlife to private gatherings and brand activations, I capture moments that tell a story.</p>
+                <div class="cta-actions">
+                    <a href="mailto:brianzloh@gmail.com?subject=Event%20Photography%20Inquiry" class="btn btn-primary">Book Event Coverage</a>
+                    <a href="https://www.instagram.com/brianlohmedia" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">Follow @brianlohmedia</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <p>© 2026 Brian Loh · <a href="/">brianloh.dev</a> · <a href="/socialmedia/">Social Media &amp; Web</a></p>
+            <p class="footer-sub">Photography &amp; Creative Media · New York City, NY</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
