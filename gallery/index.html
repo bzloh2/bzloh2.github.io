@@ -8,18 +8,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/nav.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <!-- NAV -->
-    <nav class="nav" id="nav">
-        <div class="nav-inner">
-            <a href="/" class="nav-logo">← brianloh.dev</a>
-            <div class="nav-links">
-                <a href="/socialmedia/" class="nav-link">🎥 Social Media</a>
-                <a href="/gallery/" class="nav-link active">📸 Gallery</a>
-                <a href="https://www.instagram.com/brianlohmedia" target="_blank" rel="noopener noreferrer" class="nav-link ig-pill">@brianlohmedia</a>
+    <nav class="site-nav" id="site-nav">
+        <div class="site-nav-inner">
+            <a href="/" class="site-nav-name">Brian Loh</a>
+            <div class="site-nav-links">
+                <a href="mailto:bloh0408@gmail.com" class="site-nav-link nav-email">📧 Email Me</a>
+                <a href="/" class="site-nav-link nav-dev">💻 Developer</a>
+                <a href="/gallery/" class="site-nav-link nav-gallery active">📸 Gallery</a>
+                <a href="/socialmedia/" class="site-nav-link nav-social">🎥 Social</a>
             </div>
         </div>
     </nav>
@@ -404,5 +406,11 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+        const siteNav = document.getElementById('site-nav');
+        window.addEventListener('scroll', () => {
+            siteNav.classList.toggle('scrolled', window.scrollY > 10);
+        });
+    </script>
 </body>
 </html>

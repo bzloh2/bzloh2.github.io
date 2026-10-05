@@ -4,17 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brian Loh - Growth Software Engineer</title>
+    <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div class="top-bar">
-        <div class="container top-bar-inner">
-            <a href="mailto:bloh0408@gmail.com" class="top-bar-link">📧 Email Me</a>
-            <a href="https://www.linkedin.com/in/bzloh/" target="_blank" rel="noopener noreferrer" class="top-bar-link">💼 LinkedIn</a>
-            <a href="/socialmedia/" class="top-bar-link top-bar-social">🎥 Social Media</a>
-            <a href="/gallery/" class="top-bar-link top-bar-gallery">📸 Gallery</a>
+    <nav class="site-nav" id="site-nav">
+        <div class="site-nav-inner">
+            <a href="/" class="site-nav-name">Brian Loh</a>
+            <div class="site-nav-links">
+                <a href="mailto:bloh0408@gmail.com" class="site-nav-link nav-email">📧 Email Me</a>
+                <a href="/" class="site-nav-link nav-dev active">💻 Developer</a>
+                <a href="/gallery/" class="site-nav-link nav-gallery">📸 Gallery</a>
+                <a href="/socialmedia/" class="site-nav-link nav-social">🎥 Social</a>
+            </div>
         </div>
-    </div>
+    </nav>
 
     <section id="hero" class="hero">
         <div class="container">
@@ -176,5 +180,11 @@
     </footer>
 
     <script src="js/script.js"></script>
+    <script>
+        const siteNav = document.getElementById('site-nav');
+        window.addEventListener('scroll', () => {
+            siteNav.classList.toggle('scrolled', window.scrollY > 10);
+        });
+    </script>
 </body>
 </html>

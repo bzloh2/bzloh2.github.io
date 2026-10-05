@@ -1,0 +1,166 @@
+/* =========================================
+   SHARED NAV — brianloh.dev
+   Imported by all pages for a consistent header.
+   ========================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap');
+
+.site-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 200;
+    padding: 0;
+    background: rgba(7, 9, 14, 0.92);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.site-nav.scrolled {
+    background: rgba(7, 9, 14, 0.98);
+    box-shadow: 0 2px 24px rgba(0, 0, 0, 0.4);
+}
+
+.site-nav-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 24px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+/* ── Name / Logo ── */
+.site-nav-name {
+    font-family: 'Outfit', system-ui, sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #e2e8f0;
+    text-decoration: none;
+    white-space: nowrap;
+    letter-spacing: -0.01em;
+    flex-shrink: 0;
+    transition: color 0.2s;
+}
+
+.site-nav-name:hover {
+    color: #fff;
+}
+
+/* ── Links group ── */
+.site-nav-links {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-wrap: nowrap;
+}
+
+/* ── Base pill ── */
+.site-nav-link {
+    font-family: 'Outfit', system-ui, sans-serif;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #94a3b8;
+    text-decoration: none;
+    padding: 6px 16px;
+    border-radius: 50px;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    transition: color 0.2s, background 0.2s, border-color 0.2s, box-shadow 0.2s;
+}
+
+.site-nav-link:hover {
+    color: #e2e8f0;
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* ── "Email Me" accent ── */
+.site-nav-link.nav-email {
+    color: #60a5fa;
+    border-color: rgba(96, 165, 250, 0.25);
+}
+
+.site-nav-link.nav-email:hover {
+    background: rgba(96, 165, 250, 0.1);
+    border-color: rgba(96, 165, 250, 0.5);
+    color: #93c5fd;
+    box-shadow: 0 0 16px rgba(96, 165, 250, 0.15);
+}
+
+/* ── "Developer" accent ── */
+.site-nav-link.nav-dev {
+    color: #34d399;
+    border-color: rgba(52, 211, 153, 0.25);
+}
+
+.site-nav-link.nav-dev:hover {
+    background: rgba(52, 211, 153, 0.1);
+    border-color: rgba(52, 211, 153, 0.5);
+    color: #6ee7b7;
+    box-shadow: 0 0 16px rgba(52, 211, 153, 0.15);
+}
+
+/* ── "Gallery" accent ── */
+.site-nav-link.nav-gallery {
+    color: #f472b6;
+    border-color: rgba(244, 114, 182, 0.25);
+}
+
+.site-nav-link.nav-gallery:hover {
+    background: rgba(244, 114, 182, 0.1);
+    border-color: rgba(244, 114, 182, 0.5);
+    color: #f9a8d4;
+    box-shadow: 0 0 16px rgba(244, 114, 182, 0.15);
+}
+
+/* ── "Social" accent ── */
+.site-nav-link.nav-social {
+    color: #c084fc;
+    border-color: rgba(192, 132, 252, 0.25);
+}
+
+.site-nav-link.nav-social:hover {
+    background: rgba(192, 132, 252, 0.1);
+    border-color: rgba(192, 132, 252, 0.5);
+    color: #d8b4fe;
+    box-shadow: 0 0 16px rgba(192, 132, 252, 0.15);
+}
+
+/* ── Active state (current page) ── */
+.site-nav-link.active {
+    font-weight: 600;
+    color: #fff;
+}
+
+.site-nav-link.nav-email.active   { background: rgba(96, 165, 250, 0.15);  border-color: rgba(96, 165, 250, 0.4); }
+.site-nav-link.nav-dev.active     { background: rgba(52, 211, 153, 0.15);  border-color: rgba(52, 211, 153, 0.4); }
+.site-nav-link.nav-gallery.active { background: rgba(244, 114, 182, 0.15); border-color: rgba(244, 114, 182, 0.4); }
+.site-nav-link.nav-social.active  { background: rgba(192, 132, 252, 0.15); border-color: rgba(192, 132, 252, 0.4); }
+
+/* ── Push page body down by nav height ── */
+body {
+    padding-top: 60px;
+}
+
+/* ── Mobile: hide labels, keep pills ── */
+@media (max-width: 600px) {
+    .site-nav-inner {
+        padding: 0 16px;
+        gap: 8px;
+    }
+
+    .site-nav-link {
+        padding: 5px 11px;
+        font-size: 0.78rem;
+    }
+
+    .site-nav-name {
+        font-size: 0.9rem;
+    }
+}
