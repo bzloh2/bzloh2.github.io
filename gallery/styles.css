@@ -52,84 +52,6 @@ body {
 }
 
 /* =========================================
-   NAV
-   ========================================= */
-.nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 100;
-    padding: 16px 0;
-    background: rgba(7, 9, 14, 0.82);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    border-bottom: 1px solid var(--border);
-    transition: var(--transition);
-}
-
-.nav-inner {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 24px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.nav-logo {
-    font-size: 0.9rem;
-    font-weight: 500;
-    color: var(--text-secondary);
-    text-decoration: none;
-    transition: color var(--transition);
-}
-
-.nav-logo:hover {
-    color: var(--text-primary);
-}
-
-.nav-links {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-}
-
-.nav-link {
-    font-size: 0.85rem;
-    font-weight: 500;
-    color: var(--text-secondary);
-    text-decoration: none;
-    padding: 6px 14px;
-    border-radius: 50px;
-    transition: var(--transition);
-}
-
-.nav-link:hover {
-    color: var(--text-primary);
-    background: rgba(255, 255, 255, 0.05);
-}
-
-.nav-link.active {
-    color: #fff;
-    background: rgba(59, 130, 246, 0.15);
-    border: 1px solid rgba(59, 130, 246, 0.3);
-}
-
-.nav-link.ig-pill {
-    background: linear-gradient(135deg, rgba(131, 58, 180, 0.2), rgba(225, 48, 108, 0.2));
-    border: 1px solid rgba(225, 48, 108, 0.4);
-    color: #f472b6;
-    font-weight: 600;
-}
-
-.nav-link.ig-pill:hover {
-    background: linear-gradient(135deg, rgba(131, 58, 180, 0.35), rgba(225, 48, 108, 0.35));
-    border-color: rgba(225, 48, 108, 0.7);
-    color: #fff;
-}
-
-/* =========================================
    HERO
    ========================================= */
 .gallery-hero {
@@ -902,14 +824,6 @@ body {
 }
 
 @media (max-width: 640px) {
-    .nav-links {
-        gap: 8px;
-    }
-
-    .nav-link.ig-pill {
-        display: none;
-    }
-
     .gallery-hero {
         padding: 110px 0 40px;
     }
