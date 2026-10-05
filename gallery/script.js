@@ -153,13 +153,15 @@ document.addEventListener('DOMContentLoaded', () => {
     // NAV SCROLL EFFECT
     // --------------------------------------------
     const nav = document.getElementById('nav');
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 40) {
-            nav.style.borderBottomColor = 'rgba(255,255,255,0.14)';
-            nav.style.background = 'rgba(7, 9, 14, 0.94)';
-        } else {
-            nav.style.borderBottomColor = 'rgba(255,255,255,0.08)';
-            nav.style.background = 'rgba(7, 9, 14, 0.82)';
-        }
-    }, { passive: true });
+    if (nav) {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 40) {
+                nav.style.borderBottomColor = 'rgba(255,255,255,0.14)';
+                nav.style.background = 'rgba(7, 9, 14, 0.94)';
+            } else {
+                nav.style.borderBottomColor = 'rgba(255,255,255,0.08)';
+                nav.style.background = 'rgba(7, 9, 14, 0.82)';
+            }
+        }, { passive: true });
+    }
 });
