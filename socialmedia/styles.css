@@ -403,6 +403,29 @@ body {
 }
 
 /* =========================================
+   SERVICES GALLERY CTA
+   ========================================= */
+.services-gallery-cta {
+    text-align: center;
+    margin-top: 48px;
+}
+
+.services-gallery-btn {
+    font-size: 1rem;
+    padding: 14px 36px;
+    border-color: #ec4899;
+    color: #ec4899;
+    letter-spacing: 0.02em;
+    transition: background 0.25s, color 0.25s, box-shadow 0.25s;
+}
+
+.services-gallery-btn:hover {
+    background: #ec4899;
+    color: #fff;
+    box-shadow: 0 0 24px rgba(236, 72, 153, 0.35);
+}
+
+/* =========================================
    CASE STUDY SHARED
    ========================================= */
 .case-study {
