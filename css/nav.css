@@ -132,6 +132,19 @@
     box-shadow: 0 0 16px rgba(192, 132, 252, 0.15);
 }
 
+/* ── "Marketing" accent ── */
+.site-nav-link.nav-marketing {
+    color: #fb923c;
+    border-color: rgba(251, 146, 60, 0.25);
+}
+
+.site-nav-link.nav-marketing:hover {
+    background: rgba(251, 146, 60, 0.1);
+    border-color: rgba(251, 146, 60, 0.5);
+    color: #fdba74;
+    box-shadow: 0 0 16px rgba(251, 146, 60, 0.15);
+}
+
 
 /* ── Push page body down by nav height ── */
 body {
@@ -142,15 +155,30 @@ body {
 @media (max-width: 600px) {
     .site-nav-inner {
         padding: 0 16px;
-        gap: 8px;
+        min-height: 60px;
+        height: auto;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 4px;
+    }
+
+    .site-nav-links {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 4px;
     }
 
     .site-nav-link {
-        padding: 5px 11px;
-        font-size: 0.78rem;
+        padding: 4px 7px;
+        font-size: 0.7rem;
     }
 
     .site-nav-name {
         font-size: 0.9rem;
+    }
+
+    body {
+        padding-top: 96px;
     }
 }
