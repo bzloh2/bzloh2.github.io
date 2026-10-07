@@ -215,7 +215,7 @@ body {
 
 /* Category Headers inside Grid */
 .category-header {
-    grid-column: span 12;
+    grid-column: 1 / -1;
     padding: 16px 0 12px;
     margin-top: 12px;
     border-bottom: 1px solid var(--border);
