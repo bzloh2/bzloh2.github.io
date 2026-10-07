@@ -145,6 +145,19 @@
     box-shadow: 0 0 16px rgba(251, 146, 60, 0.15);
 }
 
+.site-nav-link.nav-marketing[aria-current="page"] {
+    background: #fb923c;
+    border-color: #fb923c;
+    color: #172322;
+    font-weight: 700;
+}
+
+.site-nav-link.nav-marketing[aria-current="page"]:hover {
+    background: #fdba74;
+    border-color: #fdba74;
+    color: #172322;
+}
+
 
 /* ── Push page body down by nav height ── */
 body {
