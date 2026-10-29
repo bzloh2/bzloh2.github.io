@@ -1,0 +1,119 @@
+@import url("../gallery/styles.css");
+
+.video-summary {
+    margin: 0 0 52px;
+    padding: 28px 32px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: linear-gradient(135deg, rgba(13, 18, 30, 0.95), rgba(12, 15, 23, 0.85));
+}
+
+.video-summary .category-title {
+    margin-bottom: 10px;
+}
+
+.video-summary p {
+    max-width: 860px;
+    color: var(--text-secondary);
+    font-size: 1rem;
+    line-height: 1.75;
+}
+
+.videos-intro {
+    margin: 12px 0 28px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--border);
+}
+
+.videos-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+    max-width: 920px;
+    margin: 0 auto;
+}
+
+.video-card {
+    overflow: hidden;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--bg-card);
+    transition: transform var(--transition), border-color var(--transition), box-shadow var(--transition);
+}
+
+.video-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--border-hover);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.45);
+}
+
+.video-frame {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 9 / 16;
+    max-height: 720px;
+    overflow: hidden;
+    background: #000;
+}
+
+.video-frame iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.video-frame-tiktok blockquote {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+}
+
+.video-details {
+    padding: 22px;
+}
+
+.video-details .item-tag {
+    display: inline-block;
+    margin-bottom: 12px;
+}
+
+.video-details .item-title {
+    margin-bottom: 6px;
+}
+
+.video-link {
+    display: inline-block;
+    margin-top: 16px;
+    color: #f87171;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.video-link:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.video-link span {
+    margin-left: 4px;
+}
+
+@media (max-width: 700px) {
+    .video-summary {
+        margin-bottom: 40px;
+        padding: 22px;
+    }
+
+    .videos-grid {
+        grid-template-columns: minmax(0, 1fr);
+        max-width: 460px;
+        gap: 18px;
+    }
+
+    .video-frame {
+        max-height: 680px;
+    }
+}

@@ -158,6 +158,32 @@
     color: #172322;
 }
 
+/* ── "Videos" accent ── */
+.site-nav-link.nav-videos {
+    color: #f87171;
+    border-color: rgba(248, 113, 113, 0.25);
+}
+
+.site-nav-link.nav-videos:hover {
+    background: rgba(248, 113, 113, 0.1);
+    border-color: rgba(248, 113, 113, 0.5);
+    color: #fca5a5;
+    box-shadow: 0 0 16px rgba(248, 113, 113, 0.15);
+}
+
+.site-nav-link.nav-videos[aria-current="page"] {
+    background: #f87171;
+    border-color: #f87171;
+    color: #172322;
+    font-weight: 700;
+}
+
+.site-nav-link.nav-videos[aria-current="page"]:hover {
+    background: #fca5a5;
+    border-color: #fca5a5;
+    color: #172322;
+}
+
 
 /* ── Push page body down by nav height ── */
 body {
