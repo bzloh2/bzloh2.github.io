@@ -106,6 +106,19 @@
     box-shadow: 0 0 16px rgba(52, 211, 153, 0.15);
 }
 
+.site-nav-link.nav-dev[aria-current="page"] {
+    background: #34d399;
+    border-color: #34d399;
+    color: #172322;
+    font-weight: 700;
+}
+
+.site-nav-link.nav-dev[aria-current="page"]:hover {
+    background: #6ee7b7;
+    border-color: #6ee7b7;
+    color: #172322;
+}
+
 /* ── "Gallery" accent ── */
 .site-nav-link.nav-gallery {
     color: #f472b6;
@@ -119,6 +132,19 @@
     box-shadow: 0 0 16px rgba(244, 114, 182, 0.15);
 }
 
+.site-nav-link.nav-gallery[aria-current="page"] {
+    background: #f472b6;
+    border-color: #f472b6;
+    color: #172322;
+    font-weight: 700;
+}
+
+.site-nav-link.nav-gallery[aria-current="page"]:hover {
+    background: #f9a8d4;
+    border-color: #f9a8d4;
+    color: #172322;
+}
+
 /* ── "Social" accent ── */
 .site-nav-link.nav-social {
     color: #c084fc;
@@ -130,6 +156,19 @@
     border-color: rgba(192, 132, 252, 0.5);
     color: #d8b4fe;
     box-shadow: 0 0 16px rgba(192, 132, 252, 0.15);
+}
+
+.site-nav-link.nav-social[aria-current="page"] {
+    background: #c084fc;
+    border-color: #c084fc;
+    color: #172322;
+    font-weight: 700;
+}
+
+.site-nav-link.nav-social[aria-current="page"]:hover {
+    background: #d8b4fe;
+    border-color: #d8b4fe;
+    color: #172322;
 }
 
 /* ── "Marketing" accent ── */
