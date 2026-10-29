@@ -17,3 +17,6 @@ To preview the website locally:
    python3 -m http.server 8000
    ```
 3. Open `http://localhost:8000` in your browser.
+
+## Shared Navigation
+The navigation is rendered from `js/nav.js` so its links and behavior stay consistent across portfolio pages. To use it on a new page, include `css/nav.css` in the page `<head>` and add `<script src="/js/nav.js"></script>` immediately after the opening `<body>` tag. The active page is highlighted automatically.
